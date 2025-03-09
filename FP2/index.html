@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Список задач</h1>
+        <input type="text" id="task-input" placeholder="Введите новую задачу..." />
+        <button id="add-task">Добавить задачу</button>
+
+        <div>
+            <label><input type="radio" name="filter" value="all" checked> Все задачи</label>
+            <label><input type="radio" name="filter" value="active"> Невыполненные</label>
+            <label><input type="radio" name="filter" value="completed"> Выполненные</label>
+        </div>
+
+        <ul id="task-list"></ul>
+
+        <!-- шаблон задачи -->
+        <template id="task-template">
+            <li>
+                <input type="checkbox" class="checkbox">
+                <span class="task-text"></span>
+                <button class="delete-btn">Удалить</button>
+            </li>
+        </template>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
