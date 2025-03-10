@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="number" id="number1" placeholder="Первое число">
+        <input type="number" id="number2" placeholder="Второе число">
+        <div class="buttons">
+            <button class="btn" data-operator="+">+</button>
+            <button class="btn" data-operator="-">-</button>
+            <button class="btn" data-operator="*">*</button>
+            <button class="btn" data-operator="/">/</button>
+            <button class="btn" data-operator="^">^</button>
+            <button class="btn" data-operator="√">√</button>
+        </div>
+        <input type="text" id="result" placeholder="Результат" disabled>
+    </div>
+    <script src="main.ts"></script>
+</body>
+</html>
